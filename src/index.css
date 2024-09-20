@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --purple: hsl(259, 100%, 65%);
+  --Lred: hsl(0, 100%, 67%);
+  --OffWhite: hsl(0, 0%, 94%);
+  --Lgray: hsl(0, 0%, 86%);
+  --Sgray: hsl(0, 1%, 44%);
+  --Oblack: hsl(0, 0%, 8%);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 32px;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background-color: var(--OffWhite);
+
+  height: 100vh;
+}
