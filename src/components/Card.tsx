@@ -1,7 +1,7 @@
 import "./compStyle/Card.css"
 import Form from "./Form";
 import Calc from "./Calc";
-import {  useState } from "react";
+import { SetStateAction, useState } from "react";
 //TODO FAZER A MATEMATICA
 
 function Card(){
