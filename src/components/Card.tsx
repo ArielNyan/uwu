@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import "./compStyle/Card.css"
 import Form from "./Form";
 import Calc from "./Calc";
@@ -19,7 +20,7 @@ function Card(){
     const [months, setMonths] = useState("--")
     const [years, setYears] = useState("--")
 
-    const calculateTimePassed = (dia:number, mes:number, ano:number) => {
+    const calculateTimePassed = (dia:any, mes:any, ano:any) => {
         if(dia > 30 || dia <= 0) return
         if(mes > 12 || mes <= 0) return
         if(ano <= 0) return
