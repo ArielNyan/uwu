@@ -1,7 +1,7 @@
 import "./compStyle/Card.css"
 import Form from "./Form";
 import Calc from "./Calc";
-import { useState } from "react";
+import {  useState } from "react";
 //TODO FAZER A MATEMATICA
 
 function Card(){
@@ -56,7 +56,7 @@ function Card(){
     
     return(
         <div className="card sm:max-w-xs flex flex-col p-3 bg-white content-center justify-center">
-            <Form getDay={(e)=>{setMDay(e.target.value)}} getMonth={(e)=>{setMMonth(e.target.value)}} getYear={(e)=>{setMYear(e.target.value)}}/>
+            <Form getDay={(e: { target: { value: SetStateAction<undefined>; }; })=>{setMDay(e.target.value)}} getMonth={(e: { target: { value: SetStateAction<undefined>; }; })=>{setMMonth(e.target.value)}} getYear={(e: { target: { value: SetStateAction<undefined>; }; })=>{setMYear(e.target.value)}}/>
             <div className="btn-container flex w-full justify-center my-4">
                 <button onClick={()=>{calculateTimePassed(mDay, mMonth, mYear)}} className="btn p-3 rounded-3xl bg-purple-700 hover:bg-purple-800">
                     <img src="src/assets/icon-arrow.svg" alt="" />
